@@ -1,0 +1,6 @@
+/mysql
+/docker
+/redis
+*.bat
+/www/vendor
+
