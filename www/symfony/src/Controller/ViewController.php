@@ -17,9 +17,13 @@ class ViewController extends AbstractController
             'lastname' => 'udemy',
             'alter'=>'99'
         ];
+
+        $list = ['entry','centry','gentry'];
+
         return $this->render('view/index.html.twig', [
             'd' => $day,
-            'user'=>$user
+            'user'=>$user,
+            'l' => $list
         ]);
     }
 }
