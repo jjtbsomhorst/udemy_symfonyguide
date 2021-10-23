@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DishController!{% endblock %}
+
+{% block body %}
+<h2>Add/Remove dishes</h2>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Description</td>
+    </tr>
+    </thead>
+    {% for dish in dishes %}
+        <tr>
+            <td>{{ dish.id }}</td>
+            <td>{{ dish.name }}</td>
+            <td>{{ dish.description }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}
